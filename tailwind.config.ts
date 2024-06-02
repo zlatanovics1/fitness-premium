@@ -8,11 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary-light": "hsla(48, 39%, 69%, 1)",
+        "primary-dark": " hsla(48, 32%, 34%, 1)",
+      },
       backgroundImage: {
         gradient: "var(--default-gradient)",
       },
       backgroundColor: {
-        gradient: "var(--default-gradient)",
+        grad: "var(--default-gradient)",
       },
     },
   },
