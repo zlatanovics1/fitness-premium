@@ -1,3 +1,10 @@
+import Hero from "@/components/Hero";
+import Section from "@/components/Section";
+
 export default function Home() {
-  return <h1>Fitness premium ABC</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
