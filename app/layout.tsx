@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} bg-neutral-950 text-gray-300 px-10`}>
+      <body
+        className={`${rubik.className} bg-neutral-950 text-gray-300 h-[300vh]`}
+      >
         <Nav />
         {children}
         <Footer />

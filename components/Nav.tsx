@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <nav className="max-w-[1744px] m-auto py-10 h-[10vh]">
+    <nav className="px-24 m-auto py-10 h-[10vh] absolute top-0">
       <ul className="flex gap-12 items-center text-xl">
         <li>Home</li>
         <li>Link</li>
