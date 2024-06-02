@@ -46,6 +46,17 @@
     animation: animate-inout linear infinite 12s;
   }
 
+  .project-image-container::before {
+    @apply bg-gradient-to-t from-primary-light/50 to-primary-dark/50 absolute left-[-40%]   top-[10%] h-[80%] w-[180%] content-[''];
+    animation: spin 3s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
   @keyframes animate-inout {
     from {
       transform: translateX(-100%);

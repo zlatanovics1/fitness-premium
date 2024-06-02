@@ -1,12 +1,11 @@
 "use client";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { CgMenuMotion } from "react-icons/cg";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
-import { HiHomeModern } from "react-icons/hi2";
 import { HiOutlineHome } from "react-icons/hi";
-import { FiPhoneCall } from "react-icons/fi";
 import { SlCallOut } from "react-icons/sl";
+
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
