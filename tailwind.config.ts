@@ -6,8 +6,12 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [require("daisyui")],
   theme: {
     extend: {
+      screens: {
+        xsm: "440px",
+      },
       colors: {
         "primary-light": "hsla(48, 39%, 69%, 1)",
         "primary-dark": " hsla(48, 32%, 34%, 1)",

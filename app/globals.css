@@ -8,10 +8,11 @@
   }
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
-  html::-webkit-scrollbar {
-    display: none;
-  }
   :root {
     --default-gradient: linear-gradient(
       90deg,

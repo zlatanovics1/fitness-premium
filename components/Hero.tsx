@@ -1,7 +1,5 @@
 import Image from "next/image";
 import H1 from "./typography/H1";
-import P from "./typography/P";
-import Blob from "./Blob";
 
 export default function Hero() {
   return (
