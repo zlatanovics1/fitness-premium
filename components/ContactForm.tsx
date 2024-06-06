@@ -2,14 +2,14 @@ import AnimatedButton from "./AnimatedButton";
 
 export default function ContactForm() {
   return (
-    <form className="rounded-2xl max-sm:rounded-t-none border-gray-900 sm:border-2  sm:project-image-container relative overflow-hidden">
+    <form className="rounded-2xl max-sm:rounded-t-none border-gray-600 sm:border-2  sm:project-image-container relative overflow-hidden">
       <div className="space-y-20 rounded-2xl w-[calc(100%-2px)] scale-y-[.995] translate-x-[1.3px] bg-neutral-950 sm:px-10 px-4 sm:py-20 py-12">
         <div className="flex max-sm:flex-col sm:gap-20 gap-8  sm:items-center">
           <div className="relative z-0">
             <input
               type="text"
               id="name"
-              className=" block py-3 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
+              className=" block py-3 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-600/70 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
               placeholder=" "
             />
             <label
@@ -23,7 +23,7 @@ export default function ContactForm() {
             <input
               type="text"
               id="email"
-              className=" block py-3 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
+              className=" block py-3 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-600/70 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
               placeholder=" "
             />
             <label
@@ -39,7 +39,7 @@ export default function ContactForm() {
             // type="text"
             id="message"
             spellCheck={false}
-            className=" block py-3 h-32 resize-none px-2 w-full text-sm text-gray-500 bg-transparent rounded-md border-2 border-gray-900 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
+            className=" block py-3 h-32 resize-none px-2 w-full text-sm text-gray-500 bg-transparent rounded-md border-2 border-gray-600/70 appearance-none focus:outline-none focus:ring-0 focus:border-primary-light peer"
             placeholder=" "
           />
           <label

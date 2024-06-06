@@ -20,7 +20,7 @@ export default function SocialProof() {
       {/* <div className="rotate-180 sm:-translate-y-64">
         <Blob />
       </div> */}
-      <Section>
+      <Section nobreak>
         <P className="font-bold text-center sm:text-3xl max-sm:-translate-y-6 -translate-y-2  gold">
           Trusted By
         </P>
