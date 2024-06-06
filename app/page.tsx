@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <SocialProof />
-      {/* <Contact /> */}
       <Features />
+      <Contact />
     </>
   );
 }

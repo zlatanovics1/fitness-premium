@@ -10,7 +10,6 @@
     "local": "ngrok http --domain=insect-evolved-mildly.ngrok-free.app 3000"
   },
   "dependencies": {
-    "daisyui": "^4.12.2",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",

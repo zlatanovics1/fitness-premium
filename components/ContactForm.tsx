@@ -2,9 +2,9 @@ import AnimatedButton from "./AnimatedButton";
 
 export default function ContactForm() {
   return (
-    <form className="rounded-2xl max-sm:rounded-t-none border-gray-800 sm:border-2  sm:project-image-container relative overflow-hidden">
-      <div className="space-y-24 rounded-2xl w-[calc(100%-2px)] scale-y-[.995] translate-x-[1.3px] bg-neutral-950 sm:px-10 px-4 py-20 ">
-        <div className="flex max-sm:flex-col sm:gap-20 gap-12 sm:items-center">
+    <form className="rounded-2xl max-sm:rounded-t-none border-gray-900 sm:border-2  sm:project-image-container relative overflow-hidden">
+      <div className="space-y-20 rounded-2xl w-[calc(100%-2px)] scale-y-[.995] translate-x-[1.3px] bg-neutral-950 sm:px-10 px-4 sm:py-20 py-12">
+        <div className="flex max-sm:flex-col sm:gap-20 gap-8  sm:items-center">
           <div className="relative z-0">
             <input
               type="text"
