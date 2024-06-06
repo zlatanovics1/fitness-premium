@@ -7,7 +7,7 @@ import H2 from "./typography/H2";
 export default function Contact() {
   return (
     <Section>
-      <div className="rounded-2xl scale-90 overflow-hidden border-gray-900/40 border-2 grid sm:grid-cols-[4fr,5fr] grid-cols-1">
+      <div className="rounded-2xl scale-95 md:scale-90 overflow-hidden border-gray-900/40 border-2 grid sm:grid-cols-[4fr,5fr] grid-cols-1">
         <div className="sm:py-20 sm:px-7 max-sm:order-1">
           <ContactForm />
         </div>
