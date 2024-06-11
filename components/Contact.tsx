@@ -3,25 +3,14 @@ import ContactForm from "./ContactForm";
 import Section from "./Section";
 import H1 from "./typography/H1";
 import H2 from "./typography/H2";
+import H3 from "./typography/H3";
 
 export default function Contact() {
   return (
     <Section>
-      <div className="rounded-2xl scale-95 md:scale-90 overflow-hidden border-gray-600/70 border-2 grid sm:grid-cols-[4fr,5fr] grid-cols-1">
-        <div className="sm:py-20 sm:px-7 max-sm:order-1">
-          <ContactForm />
-        </div>
-        <div className="relative max-sm:h-80">
-          <H2 className="py-6 px-6 text-neutral-400 text-5xl">
-            Kontakiraj nas
-          </H2>
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/85  from-0% via-neutral-950/75 via-10% to-neutral-950/30 -z-[1] to-80%" />
-          <Image
-            src="https://images.unsplash.com/photo-1701122640209-26d07d4f35ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Gym"
-            fill
-            className="object-cover opacity-80 grayscale  -z-10"
-          />
+      <div className="relative max-w-2xl -rotate-6  m-auto  bg-gradient-to-tl from-primary-light to-primary-dark  rounded-3xl h-[28rem]">
+        <div className="absolute inset-0 py-10 shadow-xl shadow-white text-center px-7 bg-neutral-900 scale-[0.98] rotate-6 rounded-3xl border-[1px]">
+          <H2>Contact us</H2>
         </div>
       </div>
     </Section>

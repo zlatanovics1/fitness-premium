@@ -3,8 +3,8 @@ import sup from "@/public/abcsup.png";
 import { BiLinkExternal } from "react-icons/bi";
 export default function Browser() {
   return (
-    <div className="cursor-pointer relative max-w-[42rem] scale-90  group mockup-browser border border-primary-light/50">
-      <div className="mockup-browser-toolbar">
+    <div className="cursor-pointer relative max-w-[42rem] scale-90  group  border border-primary-light/50">
+      <div className="">
         <div className="input border border-base-300 text-gray-400">
           https://abc-supplements.com
         </div>
