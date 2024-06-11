@@ -1,15 +1,21 @@
 import Image from "next/image";
 import sup from "@/public/abcsup.png";
-import { BiLinkExternal } from "react-icons/bi";
+import { BiCircle, BiLinkExternal, BiSearch } from "react-icons/bi";
 export default function Browser() {
   return (
-    <div className="cursor-pointer relative max-w-[42rem] scale-90  group  border border-primary-light/50">
-      <div className="">
-        <div className="input border border-base-300 text-gray-400">
-          https://abc-supplements.com
+    <div className="cursor-pointer relative max-w-[42rem] scale-90 rounded-2xl group  border border-primary-light/50">
+      <div className="flex items-center gap-2 [&_*]:w-3 [&_*]:h-3 absolute top-3 left-4">
+        <BiCircle className="bg-gray-800 rounded-full text-gray-800" />
+        <BiCircle className="bg-gray-800 rounded-full text-gray-800" />
+        <BiCircle className="bg-gray-800 rounded-full text-gray-800" />
+      </div>
+      <div className="flex items-center justify-center py-2">
+        <div className="border px-2 bg-gray-800 flex items-center gap-2 border-gray-400 text-gray-400 rounded-md">
+          <BiSearch />
+          <span>abc-supplements.com</span>
         </div>
       </div>
-      <div className="px-4 py-1 border-t border-base-300">
+      <div className="px-2 py-1 border-t border-base-300">
         <Image
           src={sup}
           quality={100}
@@ -17,7 +23,7 @@ export default function Browser() {
           className="object-cover invert rounded-md"
         />
       </div>
-      <div className="absolute inset-0 p-4 bg-gradient-to-t from-primary-dark duration-300 opacity-0 group-hover:opacity-100 transition-all  to-transparent">
+      <div className="absolute inset-0 p-4 bg-gradient-to-t rounded-2xl from-primary-dark duration-300 opacity-0 group-hover:opacity-70 transition-all  to-transparent">
         <BiLinkExternal className="float-right w-5 h-5 text-primary-light" />
       </div>
     </div>
