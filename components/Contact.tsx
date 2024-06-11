@@ -4,15 +4,16 @@ import Section from "./Section";
 import H1 from "./typography/H1";
 import H2 from "./typography/H2";
 import H3 from "./typography/H3";
+import AnimatedButton from "./AnimatedButton";
+import MouseGradient from "./MouseGradient";
 
 export default function Contact() {
   return (
     <Section>
-      <div className="relative max-w-2xl -rotate-6  m-auto  bg-gradient-to-tl from-primary-light to-primary-dark  rounded-3xl h-[28rem]">
-        <div className="absolute inset-0 py-10 shadow-xl shadow-white text-center px-7 bg-neutral-900 scale-[0.98] rotate-6 rounded-3xl border-[1px]">
-          <H2>Contact us</H2>
-        </div>
-      </div>
+      {/* <div className="relative m-auto max-w-3xl h-[29rem] rounded-3xl bg-gradient-to-tl from-primary-light to-primary-dark -rotate-6 ">
+        <div className="absolute inset-0 scale-[0.98] overflow-visible rotate-6 rounded-3xl bg-neutral-900 px-7 py-10 peer "></div> */}
+      <MouseGradient />
+      {/* </div> */}
     </Section>
   );
 }
