@@ -9,7 +9,7 @@ export default function Section({
 }) {
   return (
     <section
-      className={`container ${!nopad && "max-xl:px-6"} ${!nobreak && "py-32"}`}
+      className={`container ${!nopad && "max-xl:px-6"} ${!nobreak && "py-40"}`}
     >
       {children}
     </section>

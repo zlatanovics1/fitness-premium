@@ -7,7 +7,7 @@ export default function Features() {
   return (
     <Section>
       <div className="flex max-xl:flex-col max-xl:gap-10 justify-between">
-        <H2 className="max-sm:text-3xl text-center">
+        <H2 className="max-sm:text-3xl max-sm:text-center">
           Vrhunska <br className="xsm:hidden" />
           <span className="px-5 rounded-sm mb-2 xsm:mb-4 max-xsm:mt-2 xsm:mx-2 py-[2px] bg-gradient-to-r from-primary-dark to-primary-light/70 -skew-x-12 inline-block">
             suplementacija

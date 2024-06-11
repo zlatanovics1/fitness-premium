@@ -7,16 +7,11 @@ export default function MouseGradient() {
   const xPos = useMotionValue(0);
   const yPos = useMotionValue(0);
 
-  console.log("redner");
-
   function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
     const { top, left } = currentTarget.getBoundingClientRect();
-    console.log("mm");
-    const x = clientX - left;
-    const y = clientY - top;
 
-    xPos.set(x);
-    yPos.set(y);
+    xPos.set(clientX - left);
+    yPos.set(clientY - top);
   }
   return (
     <div

@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="">
-      <div className="2xl:px-24 px-10 m-auto pb-10 pt-40">
+      <div className="2xl:px-24 px-10 m-auto pb-7 pt-40">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
