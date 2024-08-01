@@ -46,6 +46,24 @@
   .gold {
     @apply bg-gradient text-transparent bg-clip-text;
   }
+  .neon {
+    color: #f3f3f3;
+    text-shadow: 0 0 3px #f3f3f3, 0 0 1px #f3f3f3, 0 0 10px #f3f3f3,
+      0 0 20px hsla(48, 32%, 34%, 1), 0 0 40px hsla(48, 32%, 34%, 1),
+      0 0 90px hsla(48, 32%, 34%, 1), 0 0 40px hsla(48, 32%, 34%, 1),
+      0 0 150px hsla(48, 32%, 34%, 1);
+  }
+  .neonred {
+    color: #fff;
+    text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #fca5a5,
+      0 0 40px #fca5a5, 0 0 90px #fca5a5, 0 0 80px #fca5a5, 0 0 150px #fca5a5;
+  }
+  .neongreen {
+    color: #fff;
+    text-shadow: 0 0 3px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #86efac,
+      0 0 40px #86efac, 0 0 90px #86efac, 0 0 80px #86efac, 0 0 150px #86efac;
+  }
+
   .inout {
     animation: animate-inout linear infinite 12s;
   }
