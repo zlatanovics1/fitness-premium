@@ -3,7 +3,11 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { MouseEvent } from "react";
 import AnimatedButton from "./AnimatedButton";
 
-export default function MouseGradient() {
+export default function MouseGradient({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const xPos = useMotionValue(0);
   const yPos = useMotionValue(0);
 
@@ -16,10 +20,10 @@ export default function MouseGradient() {
   return (
     <div
       onMouseMove={handleMouseMove}
-      className="relative m-auto max-w-3xl h-[29rem] rounded-3xl bg-gradient-to-tl from-primary-light to-primary-dark sm:-rotate-6"
+      className="relative m-auto max-w-3xl h-[34rem] rounded-3xl bg-gradient-to-tl from-primary-light to-primary-dark sm:-rotate-6"
     >
-      <div className="flex flex-col-reverse absolute inset-0 sm:scale-[0.98] border-[1px] border-neutral-700 overflow-visible sm:rotate-6 rounded-3xl bg-black px-7 py-10 peer ">
-        <AnimatedButton />
+      <div className=" absolute inset-0 sm:scale-[0.98] border-[1px] border-neutral-700 overflow-visible sm:rotate-6 rounded-3xl bg-black px-7 py-10 peer ">
+        {children}
       </div>
       <motion.div
         className="absolute -inset-px sm:rotate-6 sm:scale-[0.98] b rounded-3xl pointer-events-none opacity-0 transition duration-300 peer-hover:opacity-70"
