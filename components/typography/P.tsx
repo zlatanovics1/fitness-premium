@@ -6,7 +6,9 @@ export default function P({
   className?: string;
 }) {
   return (
-    <p className={`leading-7 [&:not(:first-child)]:mt-6 text-lg ${className}`}>
+    <p
+      className={`leading-7 [&:not(:first-child)]:mt-6 text-lg ${className} text-gray-400`}
+    >
       {children}
     </p>
   );

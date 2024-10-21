@@ -3,15 +3,16 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CgMenuMotion } from "react-icons/cg";
-import { HiOutlineHome } from "react-icons/hi";
-import { SlCallOut } from "react-icons/sl";
+import { navLinks } from "@/config/constants";
+import { MdOutbox } from "react-icons/md";
+import I18NSwitcher from "./I18NSwitcher";
 
-export default function MobileNav() {
+export default function MobileNav({ locale }: { locale: string }) {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
-    console.log("open");
     setOpen((open) => !open);
   };
+
   return (
     <>
       <motion.button
@@ -27,27 +28,27 @@ export default function MobileNav() {
           <CgMenuMotion className="w-7 h-7" />
         </span>
       </motion.button>
+      <div className="float-right px-6 py-12 sm:hidden">
+        <I18NSwitcher locale={locale} />
+      </div>
       {open && (
         <AnimatePresence>
-          <motion.ul
+          <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100 }}
             transition={{ type: "tween", duration: 0.2 }}
-            className="bg-neutral-950/80 flex flex-col gap-10 w-[100vw] h-[100vh] pt-20 items-center"
+            className="bg-neutral-950/90 flex w-[100vw] h-[100vh] pt-32 justify-center"
           >
-            <li className="flex items-center gap-2">
-              <HiOutlineHome className="w-6 h-6 text-primary-light" />
-              Home
-            </li>
-            <li>Link</li>
-            <li>Socials</li>
-            <li className="flex items-center gap-2">
-              <SlCallOut className="w-6 h-6 text-primary-light" />
-              Contact
-            </li>
-            <li>Gallery</li>
-          </motion.ul>
+            <ul className="flex flex-col gap-20">
+              {navLinks.map((link) => (
+                <li key={link.href} className="flex items-center gap-4">
+                  <link.icon className="w-6 h-6 text-primary-light" />
+                  <a href={link.href}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         </AnimatePresence>
       )}
     </>

@@ -1,0 +1,116 @@
+{
+  "NavPage": {
+    "Features": "Features",
+    "Gallery": "Gallery",
+    "Contact us": "Contact us",
+    "Pricing": "Pricing",
+    "Find us": "Find us"
+  },
+  "HeroPage": {
+    "headlineStart": "Experience Top Fitness in an",
+    "headlineGradient": " Exclusive ",
+    "headlineEnd": "Ambience."
+  },
+  "FeaturesPage": {
+    "headline": "What awaits you",
+    "trainings": {
+      "title": "Personal trainings",
+      "content": "We offer nutrition plans, 1-on-1 training, group training and cardio programs to effectively achieve your goals."
+    },
+    "machines": {
+      "title": "Latest Generation Equipment",
+      "content": "Our fitness center is equipped with state-of-the-art, top-quality equipment from renowned global manufacturers."
+    },
+    "recovery": {
+      "title": "Complete Recovery",
+      "content": "Our equipped spaces for showers and supplement consumption enable quick recovery after training."
+    },
+    "friendly": {
+      "title": "Pleasant Atmosphere",
+      "content": "A friendly atmosphere and expert team, along with attention to hygiene, make your workout exceptionally enjoyable."
+    }
+  },
+  "SupplementsPage": {
+    "headlineStart": "Superior",
+    "headlineGradient1": "supplementation",
+    "headlineBetween": "as an",
+    "headlineGradient2": "indispensable",
+    "headlineEnd": "part of training",
+    "text": {
+      "help": "Expert assistance in selecting supplements",
+      "discount": "Discounts for gym members",
+      "shop": "Store with a variety of supplements near the fitness center"
+    }
+  },
+  "GalleryPage": {
+    "headline": "Gallery"
+  },
+  "TestimonialsPage": {
+    "headline": "What others say about us",
+    "roles": {
+      "member": "Gym member"
+    },
+    "1": "Definitely the best gym in town!",
+    "2": "Very friendly staff! Highly recommended.",
+    "3": "It's always pleasant to train here, the atmosphere is relaxed, and the space is clean.",
+    "4": "Good organization and plenty of space, never crowded, even during peak hours.",
+    "5": "Everything is well organized and relaxed, a true pleasure for working out.",
+    "6": "As the saying goes, world-class but ours!"
+  },
+  "PricingPage": {
+    "headline": "Affordable for all, designed with you in mind.",
+    "daily": "Daily training",
+    "basic": {
+      "headline": "Basic membership for fitness enthusiasts",
+      "features": {
+        "1": "Showers",
+        "2": "Cardio",
+        "3": "20% discount on supplements",
+        "4": "One-month training program"
+      }
+    },
+    "gold": {
+      "headline": "Gold package with additional features",
+      "features": {
+        "1": "Showers",
+        "2": "Cardio",
+        "3": "20% discount on supplements",
+        "4": "One-month training program",
+        "5": "Towel for training"
+      }
+    },
+    "premium": {
+      "headline": "Complete package with special benefits",
+      "features": {
+        "1": "Showers",
+        "2": "Cardio",
+        "3": "20% discount on supplements",
+        "4": "One-month training program",
+        "5": "Protein shake 15x"
+      }
+    }
+  },
+  "WorkingHoursPage": {
+    "headline": "Working hours",
+    "working": "MON-SAT",
+    "not-working": "SUNDAY",
+    "nonWorkingDay": "CLOSED",
+    "open": "OPEN",
+    "closed": "CLOSED"
+  },
+  "ContactPage": {
+    "headline": "Contact us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "FindUsPage": {
+    "headline": "Find us",
+    "description": "We invite you to visit us, explore our space and talk to our staff about all the services we offer. We look forward to meeting you!"
+  },
+  "FooterPage": {
+    "links": "Links",
+    "follow": "Follow us"
+  }
+}

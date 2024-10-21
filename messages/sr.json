@@ -1,0 +1,116 @@
+{
+  "NavPage": {
+    "Features": "Pogodnosti",
+    "Gallery": "Galerija",
+    "Contact us": "Kontaktiraj nas",
+    "Pricing": "Članarine",
+    "Find us": "Poseti nas"
+  },
+  "HeroPage": {
+    "headlineStart": "Doživite Vrhunski Fitness u",
+    "headlineGradient": " Ekskluzivnom ",
+    "headlineEnd": "Ambijentu."
+  },
+  "FeaturesPage": {
+    "headline": "Šta vas očekuje",
+    "trainings": {
+      "title": "Personalni treninzi",
+      "content": "Nudimo plan ishrane, 1-na-1 treninge, grupne treninge i kardio programe za efikasno postizanje vaših ciljeva."
+    },
+    "machines": {
+      "title": "Najnovija generacija opreme",
+      "content": "Naš fitness centar ima najmoderniju opremu vrhunskog kvaliteta od priznatih svetskih proizvođača."
+    },
+    "recovery": {
+      "title": "Kompletan oporavak",
+      "content": "Opremljeni prostori za tuširanje i konzumaciju suplemenata omogućavaju brz oporavak nakon treninga."
+    },
+    "friendly": {
+      "title": "Prijatna atmosfera",
+      "content": "Prijateljska atmosfera i stručan tim, uz brigu o higijeni, čine vaš trening izuzetno prijatnim."
+    }
+  },
+  "SupplementsPage": {
+    "headlineStart": "Vrhunska",
+    "headlineGradient1": "suplementacija",
+    "headlineBetween": "kao",
+    "headlineGradient2": "neizostavni",
+    "headlineEnd": "deo treninga",
+    "text": {
+      "help": " Stručna pomoc pri izboru suplemenata",
+      "discount": "Popusti za članove teretane",
+      "shop": "Prodavnica raznovrsnih suplemenata u blizini fitness centra"
+    }
+  },
+  "GalleryPage": {
+    "headline": "Galerija"
+  },
+  "TestimonialsPage": {
+    "headline": "Šta drugi misle o nama",
+    "roles": {
+      "member": "Član teretane"
+    },
+    "1": "Definitivno najbolja teretana u gradu!",
+    "2": "Veoma prijatno osoblje! Za svaku preporuku",
+    "3": "Uvek je prijatno trenirati ovde, atmosfera je opuštena, a prostor čist.",
+    "4": "Dobra organizacija i dovoljno prostora, nikada nema gužve čak ni u špicu.",
+    "5": "Sve je lepo organizovano i opušteno, pravi užitak za trening.",
+    "6": "Što bi se reklo, svetski a naše!"
+  },
+  "PricingPage": {
+    "headline": "Prisupačno svima, osmišljeno s vama na umu",
+    "daily": "Dnevni trening",
+    "basic": {
+      "headline": "Osnovna članarina za fitness entuzijaste",
+      "features": {
+        "1": "Tuširanje",
+        "2": "Kardio",
+        "3": "20% popusta na suplemente",
+        "4": "Program treninga mesec dana"
+      }
+    },
+    "gold": {
+      "headline": "Zlatni paket sa dodatnim sadržajima",
+      "features": {
+        "1": "Tuširanje",
+        "2": "Kardio",
+        "3": "20% popusta na suplemente",
+        "4": "Program treninga mesec dana",
+        "5": "Peškir za trening"
+      }
+    },
+    "premium": {
+      "headline": "Kompletan paket sa posebnim pogodnostima",
+      "features": {
+        "1": "Tuširanje",
+        "2": "Kardio",
+        "3": "20% popusta na suplemente",
+        "4": "Program treninga mesec dana",
+        "5": "Proteinski šejk 15x"
+      }
+    }
+  },
+  "WorkingHoursPage": {
+    "headline": "Radno vreme",
+    "working": "PON-SUB",
+    "not-working": "NEDELJA",
+    "nonWorkingDay": "NERADAN DAN",
+    "open": "OTVORENO",
+    "closed": "ZATVORENO"
+  },
+  "ContactPage": {
+    "headline": "Kontaktiraj nas",
+    "name": "Ime",
+    "email": "Email",
+    "message": "Poruka",
+    "send": "Pošalji poruku"
+  },
+  "FindUsPage": {
+    "headline": "Poseti nas",
+    "description": "Pozivamo vas da nas posetite, istražite naš prostor i razgovarate sa našim osobljem o svim uslugama koje nudimo. Radujemo se što ćemo vas upoznati!"
+  },
+  "FooterPage": {
+    "links": "Linkovi",
+    "follow": "Zaprati nas"
+  }
+}

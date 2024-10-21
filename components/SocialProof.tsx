@@ -8,6 +8,8 @@ import fa from "@/public/fa.png";
 import hype from "@/public/hype.png";
 import warrior from "@/public/warrior.webp";
 import lifeFitness from "@/public/life_fitness.png";
+import React from "react";
+import BlobLine from "./BlobLine";
 
 const images = [
   { src: kevinLevrone, alt: "Kevin Levrone Signature Series Logo" },
@@ -20,15 +22,10 @@ const images = [
 export default function SocialProof() {
   return (
     <>
-      <Blob />
-      {/* <div className="hidden -translate-y-10 scale-x-[-1] max-sm:block">
-        <Blob />
-      </div> */}
-      {/* <div className="rotate-180 sm:-translate-y-64">
-        <Blob />
-      </div> */}
-      <Section nobreak>
-        <P className="font-bold text-center sm:text-3xl max-sm:-translate-y-6 -translate-y-2  gold">
+      {/* <BlobLine reverse={false} /> */}
+
+      <Section nobreak className="mt-8">
+        <P className="font-bold text-center sm:text-3xl max-sm:-translate-y-4  gold">
           Trusted By
         </P>
         <div className="flex items-center justify-center">

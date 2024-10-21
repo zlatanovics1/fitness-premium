@@ -1,4 +1,4 @@
-export default function Blob() {
+export default function Blob({ className }: { className?: string }) {
   return (
     <svg
       id="wave"
@@ -6,6 +6,9 @@ export default function Blob() {
       viewBox="0 0 1440 130"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
+      className={`h-[6.5rem] max-sm:h-28 brightness-[0.75] w-[200vw] ${
+        className ? className : ""
+      }`}
     >
       <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">

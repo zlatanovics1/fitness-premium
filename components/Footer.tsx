@@ -1,106 +1,81 @@
+import { navLinks } from "@/config/constants";
+import { useTranslations } from "next-intl";
 import { BsInstagram } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
+  const t = useTranslations("FooterPage");
+  const navT = useTranslations("NavPage");
   return (
     <footer className="">
       <div className="2xl:px-24 px-10 m-auto pb-7 pt-40">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary-dark mb-4">
-                Abc Premium
+              <span className="self-center text-2xl font-semibold whitespace-nowrap gold mb-4">
+                Fitness Premium ABC
               </span>
             </a>
           </div>
-          <div className="grid grid-cols-2  gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2  gap-14 ">
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase">
-                Resources
+                {t("links")}
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium [&_:hover]:text-primary-light [&]:cursor-pointer">
-                <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Tailwind CSS
-                  </a>
-                </li>
+              <ul className="text-gray-500 dark:text-gray-400 flex flex-col gap-4 font-medium [&_:hover]:text-primary-light [&]:cursor-pointer">
+                {[...navLinks.slice(1, 3), navLinks.at(-1)].map((link) => (
+                  <li key={link?.label}>
+                    <a href={link?.href}>{navT(link?.label)}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase">
-                Follow us
+                {t("follow")}
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium [&_:hover]:text-primary-light [&]:cursor-pointer">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
+                    href="https://www.instagram.com/fitness_premium_abc/"
+                    className="hover:underline flex items-center gap-3 "
                   >
-                    Github
+                    <BsInstagram />
+                    Fitness Premium ABC
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a
+                    href="https://www.instagram.com/abc_supplements_shop/"
+                    className="hover:underline flex items-center gap-3"
+                  >
+                    <BsInstagram />
+                    ABC Supplements
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
+                    href="https://www.instagram.com/fitness_centar_abc2/"
+                    className="hover:underline flex items-center gap-3"
                   >
-                    Discord
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold  uppercase ">Legal</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium [&_:hover]:text-primary-light [&]:cursor-pointer">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
+                    <BsInstagram />
+                    Fitness Centar ABC
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="mb-6 sm:mt-24 mt-12 border-gray-200 sm:mx-auto dark:border-gray-700 " />
+        <hr className="mb-6 sm:mt-24 mt-12 border-neutral-500 sm:mx-auto dark:border-gray-700 " />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a
-              href="https://flowbite.com/"
-              className="hover:underline text-primary-dark"
-            >
+            <p className="text-primary-dark inline-block">
               Fitness Premium ABC™
-            </a>
+            </p>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 gap-4 sm:justify-center sm:mt-0 [&_:hover]:text-primary-light [&]:cursor-pointer ">
-            <BsInstagram />
-            <FaFacebook />
-          </div>
         </div>
       </div>
     </footer>
   );
-
-  // 109 rem // 1744 px
-  /*<footer>
-    Abc premium
-    fitness@abcpremium.com
-    // br tel
-    // instagram - fitness_premium_abc
-    
-    </footer>*/
 }
