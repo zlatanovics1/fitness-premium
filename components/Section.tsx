@@ -18,7 +18,7 @@ export default function Section({
       <section
         id={id}
         className={`container ${!nopad ? "max-xl:px-6" : ""} ${
-          !nobreak ? "py-44" : ""
+          !nobreak ? "sm:py-44 py-32" : ""
         } ${className ? className : ""}`}
       >
         {children}

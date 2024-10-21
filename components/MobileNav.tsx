@@ -4,11 +4,12 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { CgMenuMotion } from "react-icons/cg";
 import { navLinks } from "@/config/constants";
-import { MdOutbox } from "react-icons/md";
 import I18NSwitcher from "./I18NSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function MobileNav({ locale }: { locale: string }) {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("NavPage");
   const handleClick = () => {
     setOpen((open) => !open);
   };
@@ -28,7 +29,7 @@ export default function MobileNav({ locale }: { locale: string }) {
           <CgMenuMotion className="w-7 h-7" />
         </span>
       </motion.button>
-      <div className="float-right px-6 py-12 sm:hidden">
+      <div className="float-right px-6 py-12 sm:hidden -translate-y-1">
         <I18NSwitcher locale={locale} />
       </div>
       {open && (
@@ -38,13 +39,13 @@ export default function MobileNav({ locale }: { locale: string }) {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100 }}
             transition={{ type: "tween", duration: 0.2 }}
-            className="bg-neutral-950/90 flex w-[100vw] h-[100vh] pt-32 justify-center"
+            className="bg-neutral-950/90 flex w-[100vw] h-[100vh] pt-28 justify-center"
           >
-            <ul className="flex flex-col gap-20">
+            <ul className="flex flex-col gap-14">
               {navLinks.map((link) => (
                 <li key={link.href} className="flex items-center gap-4">
                   <link.icon className="w-6 h-6 text-primary-light" />
-                  <a href={link.href}>{link.label}</a>
+                  <a href={link.href}>{t(link.label)}</a>
                 </li>
               ))}
             </ul>

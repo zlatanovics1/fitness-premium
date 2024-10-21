@@ -77,6 +77,16 @@
     @apply bg-gradient text-transparent bg-clip-text;
   }
 
+  :root {
+    --time: 80s;
+  }
+
+  @media (max-width: 640px) {
+    :root {
+      --time: 33s;
+    }
+  }
+
   .neon {
     color: #f3f3f3;
     text-shadow: 0 0 3px #f3f3f3, 0 0 1px #f3f3f3, 0 0 10px #f3f3f3,
@@ -132,12 +142,12 @@
     );
   }
   .scroll1 {
-    animation: scroll1 80s linear infinite;
-    animation-delay: -80s;
+    animation: scroll1 var(--time) linear infinite;
+    animation-delay: calc(-1 * var(--time));
   }
   .scroll2 {
-    animation: scroll2 80s linear infinite;
-    animation-delay: -40s;
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(-1 * var(--time) / 2);
   }
   .reverse {
     animation-direction: reverse;

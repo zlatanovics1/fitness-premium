@@ -3,7 +3,7 @@ import Section from "./Section";
 import gymMachines from "@/public/9.jpg";
 import personalTrainer from "@/public/personal.jpg";
 import proteinShake from "@/public/proteinshake.jpg";
-import happyStaff from "@/public/happy.jpg";
+import happyStaff from "@/public/happy2.jpeg";
 import H2 from "./typography/H2";
 import { useTranslations } from "next-intl";
 import { Feature } from "@/config/types";

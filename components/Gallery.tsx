@@ -26,13 +26,7 @@ export default function Gallery() {
         <div
           className={`${styles} lg:col-span-2 lg:row-span-3 brightness-[0.7] row-span-2`}
         >
-          <video
-            playsInline
-            loop
-            autoPlay
-            muted
-            className="w-full h-full object-cover"
-          >
+          <video playsInline autoPlay muted>
             <source src="/fitnessVideo.mp4" type="video/mp4" />
           </video>
         </div>

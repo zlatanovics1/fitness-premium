@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import MobileNav from "./MobileNav";
 import AnimatedButton from "./AnimatedButton";
-import { Link } from "@/i18n/routing";
-import { BsArrowRight } from "react-icons/bs";
 import I18NSwitcher from "./I18NSwitcher";
 
 export default function Nav({ locale }: { locale: string }) {

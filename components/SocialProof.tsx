@@ -22,9 +22,11 @@ const images = [
 export default function SocialProof() {
   return (
     <>
-      {/* <BlobLine reverse={false} /> */}
+      <div className="relative max-sm:-translate-y-8 ">
+        <BlobLine reverse={false} />
+      </div>
 
-      <Section nobreak className="mt-8">
+      <Section nobreak className="mt-14">
         <P className="font-bold text-center sm:text-3xl max-sm:-translate-y-4  gold">
           Trusted By
         </P>

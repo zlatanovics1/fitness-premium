@@ -3,6 +3,7 @@ import { CgQuote, CgUser } from "react-icons/cg";
 import { BiSolidStar, BiStar, BiUserCircle } from "react-icons/bi";
 import { Testimonial } from "@/config/types";
 import { useTranslations } from "next-intl";
+import { FaRegStarHalf, FaRegStarHalfStroke } from "react-icons/fa6";
 
 export default function TestimonialCard({
   testimonial,
@@ -35,7 +36,8 @@ export default function TestimonialCard({
           <BiSolidStar />
           <BiSolidStar />
           <BiSolidStar />
-          <BiSolidStar />
+
+          {index && !(index % 2) ? <FaRegStarHalfStroke /> : <BiSolidStar />}
         </div>
       </div>
     </div>

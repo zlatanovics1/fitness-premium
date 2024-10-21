@@ -28,6 +28,10 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <meta
+        name="google-site-verification"
+        content="__nXvvBwbYypxgBSZF1aN_BIxB1mBDydOvY5bBiG57g"
+      />
       <body
         className={`${rubik.className} bg-neutral-950 text-gray-300 overflow-x-hidden`}
       >
