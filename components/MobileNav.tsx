@@ -13,7 +13,7 @@ export default function MobileNav({ locale }: { locale: string }) {
   const handleClick = () => {
     setOpen((open) => !open);
   };
-
+  const closeModal = () => setOpen(false);
   return (
     <>
       <motion.button
@@ -43,7 +43,11 @@ export default function MobileNav({ locale }: { locale: string }) {
           >
             <ul className="flex flex-col gap-14">
               {navLinks.map((link) => (
-                <li key={link.href} className="flex items-center gap-4">
+                <li
+                  key={link.href}
+                  onClick={closeModal}
+                  className="flex items-center gap-4"
+                >
                   <link.icon className="w-6 h-6 text-primary-light" />
                   <a href={link.href}>{t(link.label)}</a>
                 </li>

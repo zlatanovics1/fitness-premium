@@ -1,10 +1,14 @@
 import { useTranslations } from "next-intl";
 import AnimatedButton from "./AnimatedButton";
 
+async function sendMessage(data: FormData) {
+  "use server";
+}
+
 export default function ContactForm() {
   const t = useTranslations("ContactPage");
   return (
-    <form className="flex gap-20 flex-col h-full">
+    <form className="flex gap-20 flex-col h-full" action={sendMessage}>
       <div className="flex max-sm:flex-col sm:gap-20 gap-8  sm:items-center">
         <div className="relative z-0">
           <input

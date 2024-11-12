@@ -24,9 +24,9 @@ export default function Gallery() {
       <H2>{t("headline")}</H2>
       <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 mt-10 ">
         <div
-          className={`${styles} lg:col-span-2 lg:row-span-3 brightness-[0.7] row-span-2`}
+          className={`${styles} lg:col-span-2 lg:row-span-3 brightness-[0.7] h-ful row-span-2`}
         >
-          <video playsInline autoPlay muted>
+          <video className="object-cover h-full" playsInline autoPlay muted>
             <source src="/fitnessVideo.mp4" type="video/mp4" />
           </video>
         </div>
