@@ -2,7 +2,7 @@
 
 Personalized website for fitness company done volunatarily to spread awareness of its benefits (been a proud customer myself for 4+ years)
 
-[Live Page] fitnesspremiumabc.com
+[Live Page] (fitnesspremiumabc.com)
 
 # Tech
 
