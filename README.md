@@ -23,7 +23,7 @@ Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion, it features loc
 ## 🚀 Getting Started
 1. Clone the repository
 ```
-git clone https://github.com/yourusername/fitness-landing-page.git
+git clone https://github.com/zlatanovics1/fitness-premium.git
 cd fitness-landing-page
 ```
 
